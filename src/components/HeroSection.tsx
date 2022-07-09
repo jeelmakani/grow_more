@@ -8,13 +8,10 @@ import {
   Button,
   Image,
   Icon,
-  IconButton,
   createIcon,
   IconProps,
   useColorModeValue,
 } from '@chakra-ui/react';
-
-import { investing } from '../assets/Investing';
 
 
 export default function HeroSection() {
@@ -50,8 +47,11 @@ export default function HeroSection() {
               With Our Signals!
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.
+          <Text color={'gray.500'} fontWeight={'medium'} letterSpacing={'wider'}>
+          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.<br/>
+          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.<br/>
+          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.<br/>
+          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.<br/>
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -59,19 +59,20 @@ export default function HeroSection() {
             <Button
               rounded={'full'}
               size={'lg'}
-              fontWeight={'normal'}
+              fontWeight={'bold'}
               px={6}
               colorScheme={'red'}
-              bg={'red.400'}
-              _hover={{ bg: 'red.500' }}>
+              bg={'green.400'}
+              _hover={{ bg: 'grey.500' }}>
               Get started
             </Button>
             <Button
               rounded={'full'}
               size={'lg'}
-              fontWeight={'normal'}
+              fontWeight={'bold'}
               px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
+              bg={'red.400'}
+              leftIcon={<PlayIcon h={4} w={4} color={'grey.300'} />}>
               How It Works
             </Button>
           </Stack>
@@ -98,18 +99,6 @@ export default function HeroSection() {
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}>
-            {/* <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'50%'}
-              top={'50%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            /> */}
             <Image
               alt={'Hero Image'}
               fit={'cover'}

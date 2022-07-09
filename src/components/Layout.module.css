@@ -1,35 +1,24 @@
 .background1 {
   height: 80vh;
   width: 60vw;
-  opacity: 0.12;
+  opacity: 0.08;
   position: fixed;
   border-radius: 50%;
   backdrop-filter: blur(500px);
   z-index: -1;
-  right: -40vw;
+  right: -15vw;
   top: 20vw;
-  background: linear-gradient(
-    15deg,
-    var(--chakra-colors-green-500) 0.1%,
-    var(--chakra-colors-green-500)10%,
-    var(--chakra-colors-chakra-body-bg)  );
 }
 
-.background2 {height: 100vh;
-  width: 60vw;
-  opacity: 0.12;
+.background2 {
+  opacity: 0.08;
   position: fixed;
   border-radius: 50%;
   backdrop-filter: blur(500px);
   z-index: -1;
   height: 80vh;
   width: 50vw;
-  left: -25vw;
+  left: -5vw;
   top: -35vh;
-  background: linear-gradient(
-    180deg,
-    var(--chakra-colors-green-500) 0.1%,
-    var(--chakra-colors-green-500)10%,
-    var(--chakra-colors-chakra-body-bg)
-  );
+
 }
