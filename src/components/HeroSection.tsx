@@ -14,9 +14,12 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+import { investing } from '../assets/Investing';
+
+
 export default function HeroSection() {
   return (
-    <Container maxW={'7xl'}>
+    <Container maxWidth={"7xl"} > 
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -37,20 +40,18 @@ export default function HeroSection() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'green.400',
+                bg: 'red.400',
                 zIndex: -1,
               }}>
               Financial Freedom,
             </Text>
             <br />
-            <Text as={'span'} color={'green.400'}>
+            <Text as={'span'} color={'red.400'}>
               With Our Signals!
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+          Start Your investment Journey with professional traders and financial experts who are ready to help you achieve your goals.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -60,9 +61,9 @@ export default function HeroSection() {
               size={'lg'}
               fontWeight={'normal'}
               px={6}
-              colorScheme={'green'}
-              bg={'green.400'}
-              _hover={{ bg: 'green.500' }}>
+              colorScheme={'red'}
+              bg={'red.400'}
+              _hover={{ bg: 'red.500' }}>
               Get started
             </Button>
             <Button
@@ -88,7 +89,7 @@ export default function HeroSection() {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('green.50', 'green.400')}
+            color={useColorModeValue('red.50', 'red.500')}
           />
           <Box
             position={'relative'}
@@ -97,7 +98,7 @@ export default function HeroSection() {
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}>
-            <IconButton
+            {/* <IconButton
               aria-label={'Play Button'}
               variant={'ghost'}
               _hover={{ bg: 'transparent' }}
@@ -108,17 +109,14 @@ export default function HeroSection() {
               left={'50%'}
               top={'50%'}
               transform={'translateX(-50%) translateY(-50%)'}
-            />
+            /> */}
             <Image
               alt={'Hero Image'}
               fit={'cover'}
               align={'center'}
               w={'100%'}
               h={'100%'}
-              src={
-                'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-              }
-            />
+              src={"https://images.unsplash.com/photo-1612010167108-3e6b327405f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}            />
           </Box>
         </Flex>
       </Stack>

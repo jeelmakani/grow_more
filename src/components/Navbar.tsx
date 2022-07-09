@@ -32,7 +32,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('green.100', 'gray.700'),
+      bg: useColorModeValue('green.100', 'green.700'),
     }}
     fontSize={'lg'}
     fontWeight={'bold'}
