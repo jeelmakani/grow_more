@@ -35,8 +35,8 @@ export default function GetInTouch() {
         <Box
           bg={useColorModeValue('white', 'black')}
           color="white"
-          boxShadow={'lg'}
-          borderRadius="lg"
+          boxShadow={'xl'}
+          borderRadius="2xl"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}>
           <Text

@@ -13,6 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import GetinTouch from './GetInTouch';
+import OurStory from './OurStory';
 import TestimonialDiv from './Testimonial';
 
 
@@ -40,14 +41,21 @@ export default function HeroSection() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'red.400',
+                // bg: '#00ff00',
                 zIndex: -1,
               }}>
               Financial Freedom,
             </Text>
             <br />
-            <Text as={'span'} color={'red.400'}>
-              With Our Signals!
+            <Text as={'span'} color={'#00ff00'}>
+              With Our
+            </Text>
+            <Text as={'span'} color={'green.400'} 
+              bgGradient='linear(to-l, #FF0000, #00ff00)'
+              bgClip='text'
+              fontSize='6xl'
+              fontWeight='extrabold'>
+              {' '}Signals!
             </Text>
           </Heading>
           <Text color={'gray.500'} fontWeight={'medium'} letterSpacing={'wider'}>
@@ -65,8 +73,8 @@ export default function HeroSection() {
               fontWeight={'bold'}
               px={6}
               colorScheme={'red'}
-              bg={'green.400'}
-              _hover={{ bg: 'grey.500' }}>
+              bg={'#00ff00'}
+              _hover={{ bg: 'green.500' }}>
               Get started
             </Button>
             <Button
@@ -74,7 +82,7 @@ export default function HeroSection() {
               size={'lg'}
               fontWeight={'bold'}
               px={6}
-              bg={'red.400'}
+              bg={'red'}
               leftIcon={<PlayIcon h={4} w={4} color={'grey.300'} />}>
               How It Works
             </Button>
@@ -93,7 +101,7 @@ export default function HeroSection() {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('red.50', 'red.500')}
+            color={useColorModeValue('red.50', 'red.300')}
           />
           <Box
             position={'relative'}
@@ -112,8 +120,11 @@ export default function HeroSection() {
           </Box>
         </Flex>
       </Stack>
+
+      <OurStory/>
       <TestimonialDiv/>
       <GetinTouch/>
+      
     </Container>
     
   );
