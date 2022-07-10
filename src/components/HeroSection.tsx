@@ -12,6 +12,9 @@ import {
   IconProps,
   useColorModeValue,
 } from '@chakra-ui/react';
+import GetinTouch from './GetInTouch';
+import TestimonialDiv from './Testimonial';
+
 
 
 export default function HeroSection() {
@@ -109,7 +112,10 @@ export default function HeroSection() {
           </Box>
         </Flex>
       </Stack>
+      <TestimonialDiv/>
+      <GetinTouch/>
     </Container>
+    
   );
 }
 
